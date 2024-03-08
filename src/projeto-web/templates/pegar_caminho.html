@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novos Cadastros de Rota</title>
+    <!-- <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" sizes="16x16 32x32 48x48">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+<body>
+    <h1>Esse é o caminho que vc está procurando</h1>
+    <p></p>
+    <p> {{ pegar_caminho }}!!</p>
+    <h2>Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.rota }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

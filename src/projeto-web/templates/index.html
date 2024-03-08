@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Aplicação Web</title>
+    <!-- <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" sizes="16x16 32x32 48x48">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+<body>
+    <h1>Partiu Mexer no Roboooooo</h1>
+    <!-- <form action="/sobre" method="post">
+        <input type="text" name="nome" placeholder="Digite o seu nome">
+        <button type="submit">Enviar</button> -->
+    </form>
+    <form action="/novo" method="post">
+        <h3>Coloque as rotas do robo aqui</h3>
+        <input type="text" name="nome" placeholder="Coloque o numero do eixo X   ">
+        <input type="text" name="nome" placeholder="Coloque o numero do eixo Y   ">
+        <input type="text" name="nome" placeholder="Coloque o numero do eixo Z   ">
+        <input type="text" name="nome" placeholder="Coloque o numero do eixo R   ">
+        <button type="submit">Enviar</button>
+    </form>
+    <form action="/pegar_caminho" method="get">
+        <h3>Aqui digite o nome para poder pegar o caminho que vc deseja</h3>
+        <input type="text" name="nome" placeholder="Digite o Nome do caminho que quer ver   ">
+        <button type="submit">Enviar</button>
+    </form>
+    <form action="/listas_caminhos" method="get">
+        <h3>LISTA DE TODOS OS CAMINHOS NO BANCO DE DADOS</h3>
+        <button type="submit">Obter lista de todos os caminhos</button>
+    </form>
+    <form action="/atualizar" method="post">
+        <h3>Atualizar dados das rotas</h3>
+        <input type="text" name="nome" placeholder="Digite o id do caminho   ">
+        <button type="submit">Atualizar</button>
+    </form>
+    <form action="/deletar" method="delete">
+        <button type="submit">DELETAR A ROTA</button>
+    </form>
+</body>
+</html>

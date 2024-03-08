@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Nova Rota</title>
+</head>
+<body>
+    <h1>Nova Rota</h1>
+
+    <!-- Exibir o valor da rota -->
+    <p>Rota: {{ rota }}</p>
+
+    <!-- Exibir os valores do banco de dados -->
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.X }}, {{ post.Y }}, {{ post.Z }}, {{ post.W }}</li>
+        {% endfor %}
+    </ul>
+    
+    <!-- Se precisar de mais manipulação na exibição, faça aqui -->
+</body>
+</html>
